@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetCare - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="pet logo.jpg" alt="PetCare logo" class="logo" />
+        <div class="brand-text">
+          <h1>PetCare</h1>
+          <p>Healthy Pets. Happy Homes.</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="treatment.html">Treatment</a></li>
+          <li><a href="other-pets.html">Other Pets</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide" style="background-image: url('pet-hos.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('dog-hero2.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('dog-treat1.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('dog-hero3.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('dog-sec.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('dog-hero.jpg');"></div>
+    </div>
+    <div class="hero-card glass">
+      <h2>Caring for Pets, One Paw at a Time</h2>
+      <p>From nutritious food to healthy treatments and adorable companions, PetCare is your trusted partner in pet care.</p>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Shop Preview -->
+  <section class="shop-preview container page-section">
+    <h2>Shop Highlights</h2>
+    <div class="highlight-grid">
+      <div class="card">
+        <video controls width="100%">
+          <source src="puppy.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>German Shepherd Puppy</h3>
+        <p>Healthy, vaccinated, playful puppy ready for adoption.</p>
+        <a href="dogs.html" class="btn">View Details</a>
+      </div>
+
+      <div class="card">
+        <img src="dog-food1.jpg" alt="Premium Dog Food" />
+        <h3>Premium Dog Food</h3>
+        <p>Balanced nutrition for active dogs.</p>
+        <a href="shop.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="card">
+        <img src="dog-treat1.jpg" alt="Dog Treats" />
+        <h3>Crunchy Dog Treats</h3>
+        <p>Perfect reward for training and bonding.</p>
+        <a href="shop.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Calculator -->
+  <section class="nutrition-calculator container page-section">
+    <div class="card">
+      <h2>Pet Nutrition Calculator</h2>
+      <form id="calc-form">
+        <label for="pet-type">Pet Type:</label>
+        <select id="pet-type" required>
+          <option value="">Select Pet</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required min="1" />
+
+        <label for="activity">Activity Level:</label>
+        <select id="activity" required>
+          <option value="">Select Level</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button type="submit" class="btn">Calculate</button>
+      </form>
+      <div id="calc-result" class="calc-result"></div>
+    </div>
+  </section>
+
+  <!-- Consultation -->
+  <section class="consultation container page-section">
+    <div class="card">
+      <h2>Free Consultation</h2>
+      <p>Need advice on pet nutrition, health, or adoption? Talk directly to us.</p>
+      <a href="https://wa.me/1234567890" target="_blank" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Blog Highlights -->
+  <section class="blog-preview container page-section">
+    <h2>From Our Blog</h2>
+    <div class="blog-grid">
+      <div class="card">
+        <h3>Top 5 Healthy Foods for Your Dog</h3>
+        <p>Discover the best nutrition to keep your furry friend healthy and happy.</p>
+        <a href="blog.html" class="btn">Read More</a>
+      </div>
+      <div class="card">
+        <h3>How to Train a Puppy Effectively</h3>
+        <p>Simple, professional tips for raising a disciplined and joyful pup.</p>
+        <a href="blog.html" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <p><strong>Branch Office:</strong> 456 Branch Ave, Abuja, Nigeria</p>
+    </div>
+
+    <div class="footer-center">
+      <div class="brand-small">
+        <img src="pet logo.jpg" alt="PetCare logo" />
+        <div>
+          <h4>PetCare</h4>
+          <p>Healthy Pets. Happy Homes.</p>
+        </div>
+      </div>
+
+      <div class="social">
+        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <p class="copyright">© 2025 PetCare. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <p><strong>Head Office:</strong> 123 Main Street, Lagos, Nigeria</p>
+    </div>
+  </div>
+</footer>
+
